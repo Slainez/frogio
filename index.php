@@ -9,7 +9,6 @@
   <?php 
     $content = new Dispatcher();
     $return = $content->dispatch();
-
     include_once('./views/'.$return);
   ?>
 </main>
@@ -17,3 +16,4 @@
 <?php
   include_once('./views/template/footer.php');
 ?>
+

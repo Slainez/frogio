@@ -1,7 +1,7 @@
 <?php
 
-namespace Moi\Frogio\Controller;
-use Moi\Frogio\Entity\Famille;
+namespace Foxital\Frogio\Controller;
+use Foxital\Frogio\Entity\Famille;
 
 class FamilleController {
   private Famille $model;
