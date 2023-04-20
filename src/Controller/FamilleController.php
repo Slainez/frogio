@@ -1,19 +1,21 @@
 <?php
 
 namespace Foxital\Frogio\Controller;
+
 use Foxital\Frogio\Entity\Famille;
 
-class FamilleController {
+class FamilleController
+{
   private Famille $model;
 
-  public function __construct(Famille $model){
-    $this->model = $model ;
+  public function __construct(Famille $model)
+  {
+    $this->model = $model;
   }
 
-  public function setView(){    
+  public function setView()
+  {
     $results = $this->model->list();
     return $results;
   }
-
-
 }

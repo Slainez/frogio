@@ -1,21 +1,23 @@
 <?php
 
 namespace Foxital\Frogio\Entity;
+
 use Foxital\Frogio\Db;
 
-class Famille {
+class Famille
+{
 
   private int $id_famille;
-  private string $nom_famille; 
-  
+  private string $nom_famille;
 
-  public function __construct(){
 
+  public function __construct()
+  {
   }
-  
+
   /**
    * Get the value of id_famille
-   */ 
+   */
   public function getId_famille()
   {
     return $this->id_famille;
@@ -25,7 +27,7 @@ class Famille {
    * Set the value of id_famille
    *
    * @return  self
-   */ 
+   */
   public function setId_famille($id_famille)
   {
     $this->id_famille = $id_famille;
@@ -35,7 +37,7 @@ class Famille {
 
   /**
    * Get the value of nom_famille
-   */ 
+   */
   public function getNom_famille()
   {
     return $this->nom_famille;
@@ -45,7 +47,7 @@ class Famille {
    * Set the value of nom_famille
    *
    * @return  self
-   */ 
+   */
   public function setNom_famille($nom_famille)
   {
     $this->nom_famille = $nom_famille;
@@ -53,9 +55,8 @@ class Famille {
     return $this;
   }
 
-  public function list(){
+  public function list()
+  {
     return Db::getInstance()->getAll($this);
   }
-
-  
 }

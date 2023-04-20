@@ -1,9 +1,11 @@
 <?php
 
 namespace Foxital\Frogio\Entity;
+
 use Foxital\Frogio\Db;
 
-class Utilisateur{
+class Utilisateur
+{
 
     private int $id_utilisateur;
     private string $pseudo;
@@ -12,11 +14,10 @@ class Utilisateur{
 
     public function __construct()
     {
-    
     }
     /**
      * Get the value of id_utilisateur
-     */ 
+     */
     public function getId_utilisateur()
     {
         return $this->id_utilisateur;
@@ -26,7 +27,7 @@ class Utilisateur{
      * Set the value of id_utilisateur
      *
      * @return  self
-     */ 
+     */
     public function setId_utilisateur($id_utilisateur)
     {
         $this->id_utilisateur = $id_utilisateur;
@@ -36,7 +37,7 @@ class Utilisateur{
 
     /**
      * Get the value of Pseudo
-     */ 
+     */
     public function getPseudo()
     {
         return $this->pseudo;
@@ -46,7 +47,7 @@ class Utilisateur{
      * Set the value of Pseudo
      *
      * @return  self
-     */ 
+     */
     public function setPseudo($pseudo)
     {
         $this->pseudo = $pseudo;
@@ -56,7 +57,7 @@ class Utilisateur{
 
     /**
      * Get the value of mail
-     */ 
+     */
     public function getMail()
     {
         return $this->mail;
@@ -66,7 +67,7 @@ class Utilisateur{
      * Set the value of mail
      *
      * @return  self
-     */ 
+     */
     public function setMail($mail)
     {
         $this->mail = $mail;
@@ -76,7 +77,7 @@ class Utilisateur{
 
     /**
      * Get the value of password
-     */ 
+     */
     public function getPassword()
     {
         return $this->password;
@@ -86,7 +87,7 @@ class Utilisateur{
      * Set the value of password
      *
      * @return  self
-     */ 
+     */
     public function setPassword($password)
     {
         $this->password = $password;
@@ -94,8 +95,8 @@ class Utilisateur{
         return $this;
     }
 
-    public function list(){
+    public function list()
+    {
         return Db::getInstance()->getAll($this);
-      }
-
+    }
 }
