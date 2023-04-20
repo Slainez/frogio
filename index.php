@@ -1,6 +1,6 @@
 <?php
   require_once('vendor/autoload.php');
-  use Moi\Frogio\Dispatcher ;
+  use Foxital\Frogio\Dispatcher ;
 
   include_once('./views/template/head.php');
   include_once('./views/template/header.php');
