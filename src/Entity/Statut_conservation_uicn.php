@@ -1,20 +1,22 @@
 <?php
 
 namespace Foxital\Frogio\Entity;
+
 use Foxital\Frogio\Db;
 
-class Statut_conservation_uicn {
+class Statut_conservation_uicn
+{
 
     private int $id_statut;
     private string $code;
     private string $statut;
     private string $icone;
     private string $description;
-    
+
 
     /**
      * Get the value of id_statut
-     */ 
+     */
     public function getId_statut()
     {
         return $this->id_statut;
@@ -24,7 +26,7 @@ class Statut_conservation_uicn {
      * Set the value of id_statut
      *
      * @return  self
-     */ 
+     */
     public function setId_statut($id_statut)
     {
         $this->id_statut = $id_statut;
@@ -34,7 +36,7 @@ class Statut_conservation_uicn {
 
     /**
      * Get the value of code
-     */ 
+     */
     public function getCode()
     {
         return $this->code;
@@ -44,7 +46,7 @@ class Statut_conservation_uicn {
      * Set the value of code
      *
      * @return  self
-     */ 
+     */
     public function setCode($code)
     {
         $this->code = $code;
@@ -54,7 +56,7 @@ class Statut_conservation_uicn {
 
     /**
      * Get the value of statut
-     */ 
+     */
     public function getStatut()
     {
         return $this->statut;
@@ -64,7 +66,7 @@ class Statut_conservation_uicn {
      * Set the value of statut
      *
      * @return  self
-     */ 
+     */
     public function setStatut($statut)
     {
         $this->statut = $statut;
@@ -74,7 +76,7 @@ class Statut_conservation_uicn {
 
     /**
      * Get the value of icone
-     */ 
+     */
     public function getIcone()
     {
         return $this->icone;
@@ -84,7 +86,7 @@ class Statut_conservation_uicn {
      * Set the value of icone
      *
      * @return  self
-     */ 
+     */
     public function setIcone($icone)
     {
         $this->icone = $icone;
@@ -94,7 +96,7 @@ class Statut_conservation_uicn {
 
     /**
      * Get the value of description
-     */ 
+     */
     public function getDescription()
     {
         return $this->description;
@@ -104,7 +106,7 @@ class Statut_conservation_uicn {
      * Set the value of description
      *
      * @return  self
-     */ 
+     */
     public function setDescription($description)
     {
         $this->description = $description;
@@ -112,7 +114,8 @@ class Statut_conservation_uicn {
         return $this;
     }
 
-    public function list(){
+    public function list()
+    {
         return Db::getInstance()->getAll($this);
-      }
+    }
 }

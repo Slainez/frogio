@@ -2,13 +2,13 @@
 
 namespace Foxital\Frogio\Controller;
 
-use Foxital\Frogio\Entity\Statut_conservation_uicn;
+use Foxital\Frogio\Entity\Collection;
 
-class StatutController
+class CollectionController
 {
-    private Statut_conservation_uicn $model;
+    private Collection $model;
 
-    public function __construct(Statut_conservation_uicn $model)
+    public function __construct(Collection $model)
     {
         $this->model = $model;
     }
