@@ -1,5 +1,5 @@
 <?php 
-use Moi\Frogio\Controller\FamilleController;
+use Foxital\Frogio\Controller\FamilleController;
 
 $fc = new FamilleController();
 $results = $fc->setView();
