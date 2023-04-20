@@ -1,6 +1,8 @@
 <?php
 
-namespace Moi\Frogio;
+namespace Foxital\Frogio;
+use PDO;
+use PDOException;
 
 class Db extends PDO{
   private static $instance = null ;
@@ -17,7 +19,7 @@ class Db extends PDO{
   }
 
   public static function getInstance(){
-    if(isnull(self::$instance)){
+    if(is_null(self::$instance)){
       self::$instance = new Db();
     }
     return self::$instance;
