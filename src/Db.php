@@ -1,6 +1,8 @@
 <?php
 
 namespace Moi\Frogio;
+use PDO;
+use PDOException;
 
 class Db extends PDO{
   private static $instance = null ;
@@ -17,9 +19,16 @@ class Db extends PDO{
   }
 
   public static function getInstance(){
-    if(isnull(self::$instance)){
+    if(is_null(self::$instance)){
       self::$instance = new Db();
     }
     return self::$instance;
+  }
+
+  public function getAll($object){
+    $tableName = get_class($object);    
+    $sql = "select * from ".explode('\\',$tableName)[3];
+    $results = $this->query($sql);
+    return $results->fetchAll(PDO::FETCH_CLASS,$tableName);
   }
 }
