@@ -6,10 +6,9 @@ use Foxital\Frogio\Db;
 class Utilisateur{
 
     private int $id_utilisateur;
-    private string $peusdo;
+    private string $pseudo;
     private string $mail;
     private string $password;
-    private Db $instanceDatabase = Db::getInstance();
 
     public function __construct()
     {
@@ -36,21 +35,21 @@ class Utilisateur{
     }
 
     /**
-     * Get the value of peusdo
+     * Get the value of Pseudo
      */ 
-    public function getPeusdo()
+    public function getPseudo()
     {
-        return $this->peusdo;
+        return $this->pseudo;
     }
 
     /**
-     * Set the value of peusdo
+     * Set the value of Pseudo
      *
      * @return  self
      */ 
-    public function setPeusdo($peusdo)
+    public function setPseudo($pseudo)
     {
-        $this->peusdo = $peusdo;
+        $this->pseudo = $pseudo;
 
         return $this;
     }
@@ -96,6 +95,7 @@ class Utilisateur{
     }
 
     public function list(){
-        return $this->instanceDatabase->getAll();
-    }
+        return Db::getInstance()->getAll($this);
+      }
+
 }

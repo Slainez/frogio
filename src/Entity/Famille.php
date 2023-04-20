@@ -1,7 +1,7 @@
 <?php
 
-namespace Moi\Frogio\Entity;
-use Moi\Frogio\Db;
+namespace Foxital\Frogio\Entity;
+use Foxital\Frogio\Db;
 
 class Famille {
 
