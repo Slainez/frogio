@@ -8,6 +8,10 @@ class Famille {
   private int $id_famille;
   private string $nom_famille; 
   
+
+  public function __construct(){
+
+  }
   
   /**
    * Get the value of id_famille
