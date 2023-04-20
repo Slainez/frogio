@@ -1,6 +1,6 @@
 <?php
-namespace Foxital\Frogio\Entity;
 
+namespace Foxital\Frogio\Entity;
 use Foxital\Frogio\Db;
 
 class Utilisateur{

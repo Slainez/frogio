@@ -1,4 +1,4 @@
-<body>
+<body class="container">
   <header>
     <h1>Bienvenue sur Frog.Io</h1>
     <nav>
