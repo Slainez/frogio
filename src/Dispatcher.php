@@ -45,6 +45,9 @@ class Dispatcher
         case 'statut':
           $this->setPage('Statut.php');
           break;
+        case 'collection':
+          $this->setPage('Collection.php');
+          break;
         default;
           break;
       }
