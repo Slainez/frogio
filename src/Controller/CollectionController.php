@@ -1,8 +1,8 @@
 <?php
 
-namespace Foxital\Frogio\Controller;
+namespace Moi\Frogio\Controller;
 
-use Foxital\Frogio\Entity\Collection;
+use Moi\Frogio\Entity\Collection;
 
 class CollectionController
 {

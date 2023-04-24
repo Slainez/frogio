@@ -1,8 +1,8 @@
 <?php
 
-namespace Foxital\Frogio;
+namespace Moi\Frogio;
 
-use Foxital\Frogio\FamilleController;
+use Moi\Frogio\FamilleController;
 
 class Dispatcher
 {
@@ -47,6 +47,9 @@ class Dispatcher
           break;
         case 'collection':
           $this->setPage('Collection.php');
+          break;
+        case 'grenouille':
+          $this->setPage('Grenouille.php');
           break;
         default;
           break;

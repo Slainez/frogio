@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Foxital\Frogio;
+namespace Moi\Frogio;
 
 use PDO;
 use PDOException;
@@ -36,5 +36,11 @@ class Db extends PDO
     $sql = "select * from " . explode('\\', $tableName)[3];
     $results = $this->query($sql);
     return $results->fetchAll(PDO::FETCH_CLASS, $tableName);
+  }
+
+  public function getAllFrogs(){
+    $sql = "select * from grenouille g join famille f on g.id_famille = f.id_famille join statut_conservation_uicn s on g.id_statut = s.id_statut";    
+    $results = $this->query($sql);
+    return $results->fetchAll(PDO::FETCH_ASSOC);
   }
 }

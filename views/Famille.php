@@ -1,7 +1,7 @@
 <?php
 
-use Foxital\Frogio\Controller\FamilleController;
-use Foxital\Frogio\Entity\Famille;
+use Moi\Frogio\Controller\FamilleController;
+use Moi\Frogio\Entity\Famille;
 
 
 $famille = new Famille();

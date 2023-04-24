@@ -1,7 +1,7 @@
 <?php
 
-use Foxital\Frogio\Controller\CollectionController;
-use Foxital\Frogio\Entity\Collection;
+use Moi\Frogio\Controller\CollectionController;
+use Moi\Frogio\Entity\Collection;
 
 $collections = new Collection();
 $fc = new CollectionController($collections);
