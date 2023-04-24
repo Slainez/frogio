@@ -1,14 +1,13 @@
-<?php
+<?php 
 
 namespace Moi\Frogio\Controller;
 
-use Moi\Frogio\Entity\Famille;
+use Moi\Frogio\Entity\Grenouille;
 
-class FamilleController
-{
-  private Famille $model;
+class GrenouilleController {
+  private Grenouille $model ;
 
-  public function __construct(Famille $model)
+  public function __construct(Grenouille $model)
   {
     $this->model = $model;
   }
