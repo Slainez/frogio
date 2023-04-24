@@ -1,10 +1,10 @@
 <?php 
 
-namespace Moi\Frogio\Entity;
+namespace Foxital\Frogio\Entity;
 
-use Moi\Frogio\Db;
-use Moi\Frogio\Entity\Famille;
-use Moi\Frogio\Entity\Statut_conservation_uicn;
+use Foxital\Frogio\Db;
+use Foxital\Frogio\Entity\Famille;
+use Foxital\Frogio\Entity\Statut_conservation_uicn;
 
 class Grenouille {
   private int $id_grenouille ;

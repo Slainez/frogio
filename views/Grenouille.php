@@ -1,7 +1,7 @@
 <?php
 
-use Moi\Frogio\Controller\GrenouilleController;
-use Moi\Frogio\Entity\Grenouille;
+use Foxital\Frogio\Controller\GrenouilleController;
+use Foxital\Frogio\Entity\Grenouille;
 
 
 $frog = new Grenouille();

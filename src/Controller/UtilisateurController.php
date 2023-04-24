@@ -1,8 +1,8 @@
 <?php
 
-namespace Moi\Frogio\Controller;
+namespace Foxital\Frogio\Controller;
 
-use Moi\Frogio\Entity\Utilisateur;
+use Foxital\Frogio\Entity\Utilisateur;
 
 class UtilisateurController
 {

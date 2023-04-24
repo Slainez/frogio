@@ -1,8 +1,8 @@
 <?php
 
-namespace Moi\Frogio\Controller;
+namespace Foxital\Frogio\Controller;
 
-use Moi\Frogio\Entity\Statut_conservation_uicn;
+use Foxital\Frogio\Entity\Statut_conservation_uicn;
 
 class StatutController
 {

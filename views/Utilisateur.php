@@ -1,6 +1,6 @@
 <?php
 
-use Moi\Frogio\Controller\UtilisateurController;
+use Foxital\Frogio\Controller\UtilisateurController;
 
 $fc = new UtilisateurController();
 $results = $fc->setView();

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Moi\Frogio;
+namespace Foxital\Frogio;
 
 use PDO;
 use PDOException;

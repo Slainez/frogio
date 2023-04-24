@@ -1,7 +1,7 @@
 <?php
 
-use Moi\Frogio\Controller\StatutController;
-use Moi\Frogio\Entity\Statut_conservation_uicn;
+use Foxital\Frogio\Controller\StatutController;
+use Foxital\Frogio\Entity\Statut_conservation_uicn;
 
 $st = new Statut_conservation_uicn();
 $fc = new StatutController($st);

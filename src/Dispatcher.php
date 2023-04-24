@@ -1,8 +1,8 @@
 <?php
 
-namespace Moi\Frogio;
+namespace Foxital\Frogio;
 
-use Moi\Frogio\FamilleController;
+use Foxital\Frogio\FamilleController;
 
 class Dispatcher
 {

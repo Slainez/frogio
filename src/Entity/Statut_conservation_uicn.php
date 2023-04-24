@@ -1,8 +1,8 @@
 <?php
 
-namespace Moi\Frogio\Entity;
+namespace Foxital\Frogio\Entity;
 
-use Moi\Frogio\Db;
+use Foxital\Frogio\Db;
 
 class Statut_conservation_uicn
 {
